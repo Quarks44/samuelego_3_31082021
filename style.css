@@ -9,40 +9,16 @@ body
   width: 100%;
 }
 
-
-
-/* Font Roboto pour texte */
-/* Font Shrikhand pour Logo et Titre */
+                                                        /* Font Roboto pour texte */
+                                                        /* Font Shrikhand pour Logo et Titre */
 
 <style> 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 </style>
-
-.footerlogo
-{
-font-family: 'Shrikhand', cursive;
-}
 
 *
 {
 font-family: 'Roboto', sans-serif;
 }
 
-/*
 
-font-family: 'Roboto', sans-serif;
-font-family: 'Shrikhand', cursive;
-
-*/
-
-.footerglobal
-{
-background-color: #333333;
-color: white;
-padding-bottom: 20px;
-}
-
-.footerlogo
-{
-font-style: italic;
-}
