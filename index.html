@@ -1,172 +1,206 @@
 <!DOCTYPE html>
-<html lang="fr">   
-<head>
-<meta charset="utf-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Ohmyfood</title> 
-<meta name="description" content="Site de Réservation de restaurant sur Paris"> 
-<link rel="stylesheet" href="style.css"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
-</head>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood</title>
+    <meta
+      name="description"
+      content="Site de Réservation de restaurant sur Paris"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <div class="conteneurglobal">
-
-                                        <!-- Header --> 
-
-            <header>
-            <div class="header_logo">
-            <a href="#"><img class="header_image" src="logo/ohmyfood.png" alt="ohmyfood">
-            </a>
-            </div>
-            <!-- Header
-            Le header est présent sur toutes les pages.Sur la page d’accueil, il contient le logo du site. Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil -->            
-            </header>
-                                        <!-- Barre de recherche -->
-
-            <div class="barrederecherche">
-            <div class="iconemap">
-            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-            </div>
-            <p><input type="search" name="localisation" id="city" placeholder="Paris,Belleville"></p>
-            </div>
-                                        <!-- Présentations -->
-
-        <div class="accueil">
-            <div class="presentation">
-            <h2 class="pres1">Réservez le menu qui vous convient</h2>
-            <p class="pres2">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            </div>
-            <button class="explorer">Explorer nos restaurants</button>                      
+  <body>
+    <div class="globalcontainer">
+        <div id="homepage">
+        <!-- Header -->
+      <header>
+        <div class="header_logo">
+          <a href="#"
+            ><img class="header_image" src="logo/ohmyfood.png" alt="ohmyfood" />
+          </a>
         </div>
-               
-<main>
+        <!--  Le header est présent sur toutes les pages.Sur la page d’accueil, il contient le logo du site. Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil -->
+      </header>
+      <!-- Barre de recherche -->
+      <div class="searchbar">
+        <div class="iconemap">
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        </div>
+        <p>
+          <input
+            type="search"
+            name="localisation"
+            id="city"
+            placeholder="Paris,Belleville"
+          />
+        </p>
+      </div>
+      <!-- Présentations -->
 
-<section class="fonctionnement">
-    <h2 class="titre_section_fonctionnement">Fonctionnement</h2>
+      <div class="home">
+        <div class="presentation">
+          <h2 class="pres1">Réservez le menu qui vous convient</h2>
+          <p class="pres2">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins
+          </p>
+        </div>
+        <button class="explorer">Explorer nos restaurants</button>
+      </div>
 
-        <div class="etape">
-            <div class="contenuetape">
-                <div class="etape1">
-                <span class="numero1">1</span>
+      <main>
+        <section class="fonctionnement">
+          <h2 class="titre_section_fonctionnement">Fonctionnement</h2>
+
+          <div class="step">
+            <div class="stepcontent">
+              <div class="step1">
+                <span class="number1">1</span>
+              </div>
+              <div class="iconstep">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <p class="textstep">Choisissez un restaurant</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepcontent">
+              <div class="step2">
+                <span class="number2">2</span>
+              </div>
+              <div class="iconstep">
+                <i class="fas fa-list"></i>
+              </div>
+              <p class="textstep">Composez votre menu</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="stepcontent">
+              <div class="step3">
+                <span class="number3">3</span>
+              </div>
+              <div class="iconstep">
+                <i class="fas fa-store-alt"></i>
+              </div>
+              <p class="textstep">Dégustez au Restaurant</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="Restaurants">
+          <h2 class="titre_section_restaurant">Restaurants</h2>
+
+          <div class="localisations">
+            <div class="Menu">
+              <a href="lapalettedugout.html">
+                <div class="picturemenu">
+                  <img
+                    src="restaurants/lapalettedugout.jpg"
+                    alt="la palette du goût"
+                  />
                 </div>
-                    <div class="iconetape">
-                    <i class="fas fa-mobile-alt"></i>
-                    </div>
-                        <p class="textetape">Choisissez un restaurant</p>
-            </div>
-        </div>
-
-        <div class="etape">
-            <div class="contenuetape">
-                <div class="etape2">
-                <span class="numero2">2</span>
+                <div class="Menu_content">
+                  <!-- Ajoutez nouveau ici -->
+                  <h3 class="menu_title">La palette du gout</h3>
+                  <p class="menu_subtitle">Ménilmontant</p>
                 </div>
-                    <div class="iconetape">
-                    <i class="fas fa-list"></i>
-                    </div>
-                        <p class="textetape">Composez votre menu</p>
+              </a>
+              <div class="menu_icone">
+                <i class="far fa-heart"></i>
+                <!-- coeur qui se rempli ANIMATION-->
+              </div>
             </div>
-        </div>
 
-        <div class="etape">
-            <div class="contenuetape">
-                <div class="etape3">
-                <span class="numero3">3</span>
+            <div class="Menu">
+              <a href="lanoteenchantee.html">
+                <div class="picturemenu">
+                  <img
+                    src="restaurants/lanoteenchantee.jpg"
+                    alt="La note enchantée"
+                  />
                 </div>
-                    <div class="iconetape">
-                    <i class="fas fa-store-alt"></i>
-                    </div>
-                    <p class="textetape">Dégustez au Restaurant</p>
+                <div class="Menu_content">
+                  <!-- Ajoutez nouveau ici -->
+                  <h3 class="menu_title">La note enchantée</h3>
+                  <p class="menu_subtitle">Charonne</p>
+                </div>
+              </a>
+              <div class="menu_icone">
+                <i class="far fa-heart"></i>
+                <!-- coeur qui se rempli ANIMATION-->
+              </div>
             </div>
+
+            <div class="Menu">
+              <a href="lanoteenchantee.html">
+                <div class="picturemenu">
+                  <img
+                    src="restaurants/alafrancaise.jpg"
+                    alt="À la française"
+                  />
+                  <!-- alt 183 -->
+                </div>
+                <div class="Menu_content">
+                  <h3 class="menu_title">À la française</h3>
+                  <p class="menu_subtitle">Cité Rouge</p>
+                </div>
+              </a>
+              <div class="menu_icone">
+                <i class="far fa-heart"></i>
+                <!-- coeur qui se rempli ANIMATION-->
+              </div>
+            </div>
+
+            <div class="Menu">
+              <a href="lanoteenchantee.html">
+                <div class="picturemenu">
+                  <img
+                    src="restaurants/ledelicedessens.jpg"
+                    alt="Le délice des sens"
+                  />
+                </div>
+                <div class="Menu_content">
+                  <h3 class="menu_title">Le délice des sens</h3>
+                  <p class="menu_subtitle">Folie-Méricourt</p>
+                </div>
+              </a>
+              <div class="menu_icone">
+                <i class="far fa-heart"></i>
+                <!-- coeur qui se rempli ANIMATION-->
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footerglobal">
+          <h2 class="footer_logo">Ohmyfood</h2>
+          <div class="footermenu">
+            <p class="suggest">
+              <i class="fas fa-utensils"></i>Proposer un restaurant
+            </p>
+            <p class="partner">
+              <i class="fas fa-hands-helping"></i>Devenir partenaire
+            </p>
+            <p class="legalnotice">Mentions légales</p>
+            <p class="contact">
+              <a href="mailto:votreadresse@mail.fr">Contact</a>
+            </p>
+          </div>
         </div>
-
-</section>
-
-<section class="Restaurants">
-    <h2 class="titre_section_restaurant">Restaurants</h2>
-
-        <div class="localisations">
-            <div class="Menu">
-                <a href="lapalettedugout.html">
-                    <div class="menuimage">
-                        <img src="restaurants/lapalettedugout.jpg" alt="la palette du goût">
-                    </div>
-                        <div class="Menu_content">
-                            <!-- Ajoutez nouveau ici -->
-                            <h3 class="Menu_titre">La palette du gout</h3>
-                            <p class="Menu_soustitre">Ménilmontant</p> 
-                        </div>
-                </a>
-                                <div class="menu_icone">
-                                    <i class="far fa-heart"></i> <!-- coeur qui se rempli ANIMATION--> 
-                                </div>
-            </div>
-
-            <div class="Menu">
-                <a href="lanoteenchantee.html">
-                    <div class="menuimage">
-                        <img src="restaurants/lanoteenchantee.jpg" alt="La note enchantée">
-                    </div>
-                        <div class="Menu_content">
-                            <!-- Ajoutez nouveau ici -->
-                            <h3 class="Menu_titre">La note enchantée</h3>
-                            <p class="Menu_soustitre">Charonne</p>
-                        </div>
-                </a>
-                                <div class="menu_icone">
-                                <i class="far fa-heart"></i> <!-- coeur qui se rempli ANIMATION--> 
-                                </div>
-            </div>
-                    
-            <div class="Menu">
-                <a href="lanoteenchantee.html">
-                    <div class="menuimage">
-                        <img src="restaurants/alafrancaise.jpg" alt="À la française"> <!-- alt 183 -->
-                    </div>
-                        <div class="Menu_content">
-                            <h3 class="Menu_titre">À la française</h3>
-                            <p class="Menu_soustitre">Cité Rouge</p>
-                        </div>
-                </a>
-                                <div class="menu_icone">
-                                <i class="far fa-heart"></i> <!-- coeur qui se rempli ANIMATION--> 
-                                </div>
-            </div>
-        
-            <div class="Menu">
-                <a href="lanoteenchantee.html">
-                    <div class="menuimage">
-                        <img src="restaurants/ledelicedessens.jpg" alt="Le délice des sens">
-                    </div>
-                        <div class="Menu_content">
-                            <h3 class="Menu_titre">Le délice des sens</h3>
-                            <p class="Menu_soustitre">Folie-Méricourt</p>
-                        </div>
-                </a>
-                                <div class="menu_icone">
-                                <i class="far fa-heart"></i> <!-- coeur qui se rempli ANIMATION--> 
-                                </div>
-            </div>
-
-        </div>
-</section>
-                
-            
-</main>
-
-                    <footer>
-                    <div class="footerglobal">
-                        <h2 class="footer_logo">Ohmyfood</h2>
-                            <div class="footermenu">
-                                <p class="proposer"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-                                <p class="partenaire"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
-                                <p class="mention">Mentions légales</p>
-                                <p class="contact"><a href="mailto:votreadresse@mail.fr">Contact</a></p>                        
-                            </div>
-                    </div>
-                    </footer>
-        </div> <!-- fin conteneur global -->
-    </body>
+      </footer>
+    </div><!-- end homepage -->
+    
+    </div> <!-- fin conteneur global -->
+  </body>
 </html>
