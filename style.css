@@ -22,12 +22,6 @@ body {
   width: 100%;
 }
 
-.globalcontainer {
-  max-width: 1440px;
-  margin: 0 auto; /* Cela garantit que les marges gauche et droite seront définies à la même taille. Le pemier paramètre 0 indique que les marges supérieure et inférieure seront toutes deux définies sur 0 */
-  padding: 0 2em;
-  background-color: #f6f6f6;
-}
 
 /* Font Roboto pour texte */
 /* Font Shrikhand pour Logo et Titre */
@@ -38,13 +32,22 @@ body {
 
 /* Police */
 
-* {
-  font-family: "Roboto", sans-serif;
+@font-face {
+  font-family: "Roboto";
+  src: url("Fonts/Roboto/Roboto-Regular-webfont.ttf");
 }
 
-h2 h3 {
-  font-family: "Shrikhand", sans-serif;
-  font-weight: bold;
+@font-face {
+  font-family: "shrikhand";
+  src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Roboto";
 }
 
 /* Homepage */
@@ -59,6 +62,7 @@ h2 h3 {
 .logo {
   color: black;
 }
+/* Barre de recherche */
 
 .searchbar {
   display: flex;
@@ -80,6 +84,28 @@ a:link {
   text-decoration: none;
 }
 
+/* Presentation */
+
+/* button */
+
+.button {
+  background-image: linear-gradient(135deg, #ff79da, #9356dc);
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 230px;
+  -webkit-box-shadow: 5px 6px 7px #0000002e;
+  box-shadow: 5px 6px 7px #0000002e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.explorer {
+  color: white;
+  text-align: center;
+}
 .home {
   background-color: #f6f6f6;
   padding-bottom: 60px;
@@ -92,14 +118,42 @@ a:link {
   padding-top: 40px;
 }
 
+/* button */
+
+.button {
+  background-image: linear-gradient(135deg, #ff79da, #9356dc);
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 230px;
+  -webkit-box-shadow: 5px 6px 7px #0000002e;
+  box-shadow: 5px 6px 7px #0000002e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.explorer {
+  color: white;
+  text-align: center;
+}
+
+
+/* Section Fonctionement */
+
 .sectiontitle {
   padding: 28px 0px 8px 26px;
   font-weight: 800;
+  font-size: 25px;
 }
 
 .sectionfonctionnement {
   background-color: white;
   padding-bottom: 18px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
 }
 
 .step {
@@ -143,24 +197,48 @@ a:link {
   font-size: 14px;
 }
 
-.button {
-  background-image: linear-gradient(135deg, #ff79da, #9356dc);
+/* Section Restaurant */
+
+.menu
+{width: 90%;
+  height: 260px;
+  border: solid 2px #F2F2F2;
   border-radius: 20px;
-  height: 40px;
-  border: none;
-  width: 230px;
-  -webkit-box-shadow: 5px 6px 7px #0000002e;
-  box-shadow: 5px 6px 7px #0000002e;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  box-shadow: 6px 8px 9px #d9d9d9;
+  background-color: white;
+  position: relative;
+  margin: 20px auto;}
+
+.menu_link
+{text-decoration: none;
 }
 
-.explorer {
-  color: white;
-  text-align: center;
+.new
+
+img
+{width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
+
+.menu_icone
+{
+  border: none;
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  color: white;
+  background-color: white;
+  margin-top: -20px;
+}
+
+
+
+
+
 
 .footerglobal {
   background-color: #353535;
