@@ -9,6 +9,8 @@
       content="Site de Réservation de restaurant sur Paris"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquieries.css" />
+    <link rel="stylesheet" href="animation.css" />
     <script
       src="https://kit.fontawesome.com/9a11bde2d2.js"
       crossorigin="anonymous"
@@ -27,7 +29,7 @@
         <!-- Header -->
         <header>
           <div class="header_logo">
-            <a class="logo"><h2>Ohmyfood</h2></a>
+            <a class="logo"><h1>Ohmyfood</h1></a>
           </div>
           <!--  Le header est présent sur toutes les pages.Sur la page d’accueil, il contient le logo du site. Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil -->
         </header>
@@ -94,7 +96,7 @@
               </div>
             </div>
           </section>
-        <!-- Restaurants-->   
+          <!-- Restaurants-->
           <section class="sectionrestaurants">
             <h2 class="sectiontitle">Restaurants</h2>
 
@@ -102,13 +104,14 @@
               <div class="menu">
                 <a class="menu_link" href="lapalettedugout.html">
                   <div class="picturemenu">
-                    <img class="imagemenu"
+                    <img
+                      class="imagemenu"
                       src="restaurants/lapalettedugout.jpg"
                       alt="la palette du goût"
                     />
                   </div>
                   <div class="menu_content">
-                    <div class="new" Nouveau></div>
+                    <span class="new"><small>Nouveau</small></span>
                     <h3 class="menu_title">La palette du gout</h3>
                     <p class="menu_subtitle">Ménilmontant</p>
                   </div>
@@ -122,13 +125,14 @@
               <div class="menu">
                 <a class="menu_link" href="lanoteenchantee.html">
                   <div class="picturemenu">
-                    <img class="imagemenu"
+                    <img
+                      class="imagemenu"
                       src="restaurants/lanoteenchantee.jpg"
                       alt="La note enchantée"
                     />
                   </div>
                   <div class="menu_content">
-                    <div class="new" Nouveau></div>
+                    <span class="new"><small>Nouveau</small></span>
                     <h3 class="menu_title">La note enchantée</h3>
                     <p class="menu_subtitle">Charonne</p>
                   </div>
@@ -142,7 +146,8 @@
               <div class="menu">
                 <a class="menu_link" href="lanoteenchantee.html">
                   <div class="picturemenu">
-                    <img class="imagemenu"
+                    <img
+                      class="imagemenu"
                       src="restaurants/alafrancaise.jpg"
                       alt="À la française"
                     />
@@ -162,7 +167,8 @@
               <div class="menu">
                 <a class="menu_link" href="lanoteenchantee.html">
                   <div class="picturemenu">
-                    <img class="imagemenu"
+                    <img
+                      class="imagemenu"
                       src="restaurants/ledelicedessens.jpg"
                       alt="Le délice des sens"
                     />
@@ -192,9 +198,9 @@
                 <i class="fas fa-hands-helping"></i>Devenir partenaire
               </p>
               <p class="legalnotice">Mentions légales</p>
-              <p class="contact">
+              <div class="contact">
                 <a href="mailto:votreadresse@mail.fr">Contact</a>
-              </p>
+              </div>
             </div>
           </div>
         </footer>
