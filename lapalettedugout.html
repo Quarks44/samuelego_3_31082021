@@ -4,24 +4,206 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>La palette du gout</title>
-    <meta
-      name="description"
-      content="Site de Réservation de restaurant sur Paris"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="mediaquieries.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <script
+      src="https://kit.fontawesome.com/9a11bde2d2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-<!-- return homepage -->
-<header>
-<a href="index.html"><i class="fas fa-arrow-left"></i></a>
-<img class="header_image" src="logo/ohmyfood.png" alt="ohmyfood" />
-</header>
+    <div class="containerglobale">
+      <header>
+        <div class="returnhomepage">
+          <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+          <!-- return homepage -->
+        </div>
+        <a class="logo"><h1>Ohmyfood</h1></a>
+      </header>
 
-</body>
+      <div class="cont.global.menu">
+        <div class="container_menu">
+          <div class="picture">
+            <img
+              class="imgrest"
+              src="restaurants/lapalettedugout.jpg"
+              alt="La palette du goût"
+            />
+          </div>
+        <div class="config_menu">
+          <div class="tit.menu">
+            <h1 class="title_menu">
+              La palette du goût
+              <button class="icone_heart">
+                <i class="far fa-heart"></i>
+              </button>
+            </h1>
+          </div>
+
+          <section class="menu_card">
+            <div class="carte_menu_entree">
+              <div class="entrees">
+                <h3 class="title-meal">ENTRÉES</h3>
+              </div>
+              <!-- Alt 0201-->
+
+              <div class="content_meal">
+                <div class="content_meal_entree_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Fricassée d'escargot</h4>
+                    <p class="meal_subtitle">
+                      Au piment d'Espelette
+                      <span class="meal_price"><strong>25€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+                <!-- fin content_meal_entree_one-->
+
+                <div class="content_meal_entree_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Foie gras de canard mi-cuit</h4>
+                    <p class="meal_subtitle">
+                      Et ses copeaux de truffe noire
+                      <span class="meal_price"><strong>35€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_entree_three">
+                  <div class="meal">
+                    <h4 class="meal_title">Oeuf au plat</h4>
+                    <p class="meal_subtitle">
+                      Assaisonné à la truffe sur lit de caviar
+                      <span class="meal_price"><strong>20€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+              <!-- fin content_meal-->
+            </div>
+            <!-- fin div carte_menu_entrée-->
+
+            <div class="carte_menu_Plats">
+              <div class="Plats">
+                <h3 class="title-meal">PLATS</h3>
+              </div>
+
+              <div class="content_meal">
+                <div class="content_meal_plats_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Filet de boeuf aux herbes</h4>
+                    <p class="meal_subtitle">
+                      Accompagné de sa ribambelle de légumes
+                      <span class="meal_price"><strong>40€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_plats_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Parmentier de queue de boeuf</h4>
+                    <p class="meal_subtitle">
+                      À la truffe noire sur sa purée de panais
+                      <span class="meal_price"><strong>35€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_plats_three">
+                  <div class="meal">
+                    <h4 class="meal_title">Filet de turbot</h4>
+                    <p class="meal_subtitle">
+                      Aux agrumes
+                      <span class="meal_price"><strong>44€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+            </div>
+
+            <div class="carte_menu_desserts">
+              <div class="desserts">
+                <h3 class="title-meal">DESSERTS</h3>
+              </div>
+
+              <div class="content_meal">
+                <div class="content_meal_desserts_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Paris-Brest</h4>
+                    <p class="meal_subtitle">
+                      Revisité
+                      <span class="meal_price"><strong>18€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_desserts_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Macaron au chocolat d'exception</h4>
+                    <p class="meal_subtitle">
+                      Et glace à la vanille de Madagascar
+                      <span class="meal_price"><strong>22€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_desserts_three">
+                  <div class="meal">
+                    <h4 class="meal_title">Mousse au chocolat</h4>
+                    <p class="meal_subtitle">
+                      Au piment d'Espelette et à la truffe noire
+                      <span class="meal_price"><strong>23€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <!-- boutton -->
+        </div>
+        <!--fin container_menu"> -->
+      </div>
+      <!--cont.global.menu -->
+
+      <footer>
+        <div class="footerglobal">
+          <h2 class="footer_logo">Ohmyfood</h2>
+          <div class="footermenu">
+            <p class="suggest">
+              <i class="fas fa-utensils"></i>Proposer un restaurant
+            </p>
+            <p class="partner">
+              <i class="fas fa-hands-helping"></i>Devenir partenaire
+            </p>
+            <p class="legalnotice">Mentions légales</p>
+            <div class="contact">
+              <a href="mailto:votreadresse@mail.fr">Contact</a>
+            </div>
+          </div>
+        </div>
+      
+      </footer>
+    </div>
+    >
+    <!-- fin div containerglobale-->
+  </body>
 </html>
