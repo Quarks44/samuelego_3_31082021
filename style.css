@@ -109,10 +109,11 @@ a:link {
   text-align: center;
   padding-top: 40px;
 }
-.pres1
-{padding: 0 10px;}
-.pres2
-{padding: 0 10px;
+.pres1 {
+  padding: 0 10px;
+}
+.pres2 {
+  padding: 0 10px;
   color: #817f7f;
 }
 
@@ -246,6 +247,7 @@ a:link {
   padding-top: 10px;
   padding-left: 10px;
 }
+/* Footer */
 
 .footerglobal {
   background-color: #353535;
@@ -267,6 +269,9 @@ a:link {
 }
 
 .legalnotice {
+  color: white;
+}
+.contact a {
   color: white;
 }
 
