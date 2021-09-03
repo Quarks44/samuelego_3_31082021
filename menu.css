@@ -1,0 +1,145 @@
+/* Format clearing */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+ol,
+i,
+img {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+body {
+  margin: auto;
+  width: 100%;
+}
+
+/* Font Roboto pour texte */
+/* Font Shrikhand pour Logo et Titre */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+
+/* Police */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Fonts/Roboto/Roboto-Regular-webfont.ttf");
+}
+
+@font-face {
+  font-family: "shrikhand";
+  src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
+}
+
+/* header */
+
+header {
+  margin: 14px 0 8px 0;
+}
+
+.logo {
+  text-align: center;
+  font-family: "shrikhand";
+  font-size: 18px;
+}
+
+.returnhomepage {
+  position: absolute;
+  left: 24px;
+  top: 30px;
+}
+
+/* image */
+.picture {
+  width: 100%;
+}
+
+.imgrest {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* contenu */
+
+.cont.global.menu {
+  background-color: #f6f6f6;
+}
+
+.config_menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  top: -33px;
+}
+
+.title_menu
+{font-family: "shrikhand";
+    font-size: 20px;
+    position: relative;
+    padding: 20px 20px ;
+   align-items: center;
+}
+
+.icone_heart
+{border: none;
+position: absolute;
+right: 40px;
+bottom: 23px;
+font-size: 20px;
+}
+
+.title-meal
+{
+    font-family: "Roboto";
+    color: #7B7B7B;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 300;
+
+}
+
+/* barre verte #99E2D0*/
+
+.meal{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px #F2F2F2;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    height: 66px;
+    margin: 14px auto 10px 20px;
+    font-family: "Roboto";
+}
+
+.meal_price
+{display: flex;
+justify-content: center;
+align-items: flex-end;
+font-size: 1em;
+position: absolute;
+right: 16px;
+bottom: 10px;}
+
+.meal_title 
+{
+    padding: 10px 0 0 8px;
+}
+.meal_subtitle{margin: 8px 0 0 8px;
+color: #7B7B7B;}
+
+
+  
