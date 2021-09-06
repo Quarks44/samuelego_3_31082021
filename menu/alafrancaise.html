@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>À la française</title>
-    <meta
-      name="description"
-      content="Site de Réservation de restaurant sur Paris"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../menu.css" />
+    <link rel="stylesheet" href="../mediaquieries.css" />
+    <link rel="stylesheet" href="../animation.css" />
+    <script
+      src="https://kit.fontawesome.com/9a11bde2d2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +18,192 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!-- return homepage -->
-    <header>
-    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    <img class="header_image" src="logo/ohmyfood.png" alt="ohmyfood" />
-    </header>
-    
-    </body>
-    </html>
+    <div class="containerglobale">
+      <header>
+        <div class="returnhomepage">
+          <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+          <!-- return homepage -->
+        </div>
+        <a class="logo"><h1>Ohmyfood</h1></a>
+      </header>
+
+      <div class="cont.global.menu">
+        <div class="container_menu">
+          <div class="picture">
+            <img
+              class="imgrest"
+              src="../restaurants/alafrancaise.jpg"
+              alt="À la française"
+            />
+          </div>
+        <div class="config_menu">
+          <div class="tit.menu">
+            <h1 class="title_menu">
+              À la française
+              <button class="icone_heart">
+                <i class="far fa-heart"></i>
+              </button>
+            </h1>
+          </div>
+
+          <section class="menu_card">
+            <div class="carte_menu_entree">
+              <div class="entrees">
+                <h3 class="title-meal">ENTRÉES</h3>
+              </div>
+              <!-- Alt 0201-->
+
+              <div class="content_meal">
+                <div class="content_meal_entree_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Tartare de poulpe acidulé</h4>
+                    <p class="meal_subtitle">
+                      Aux zestes d'orange
+                      <span class="meal_price"><strong>25€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+                <!-- fin content_meal_entree_one-->
+
+                <div class="content_meal_entree_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Velouté de légumes d'antan</h4>
+                    <p class="meal_subtitle">
+                      Carotte, panais, topinambour
+                      <span class="meal_price"><strong>35€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_entree_three">
+                  <div class="meal">
+                    <h4 class="meal_title">
+                      Soupe à l'oignon</h4>
+                    <p class="meal_subtitle">
+                      Revisitée
+                      <span class="meal_price"><strong>20€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+              <!-- fin content_meal-->
+            </div>
+            <!-- fin div carte_menu_entrée-->
+
+            <div class="carte_menu_Plats">
+              <div class="Plats">
+                <h3 class="title-meal">PLATS</h3>
+              </div>
+
+              <div class="content_meal">
+                <div class="content_meal_plats_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Coquilles Saint-Jacques</h4>
+                    <p class="meal_subtitle">
+                      Accompagnées d'une purée de panais
+                      <span class="meal_price"><strong>40€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_plats_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Magret de canard</h4>
+                    <p class="meal_subtitle">
+                      Et parmentier de pommes de terre
+                      <span class="meal_price"><strong>35€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_plats_three">
+                  <div class="meal">
+                    <h4 class="meal_title">Pigeonneau d’Ille-et-Vilaine</h4>
+                    <p class="meal_subtitle">
+                      Sur son lit de gnocchis aux légumes
+                      <span class="meal_price"><strong>44€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+            </div>
+
+            <div class="carte_menu_desserts">
+              <div class="desserts">
+                <h3 class="title-meal">DESSERTS</h3>
+              </div>
+
+              <div class="content_meal">
+                <div class="content_meal_desserts_one">
+                  <div class="meal">
+                    <h4 class="meal_title">Pétales de violettes glacés</h4>
+                    <p class="meal_subtitle">
+                      Et purée de noisettes
+                      <span class="meal_price"><strong>18€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_desserts_two">
+                  <div class="meal">
+                    <h4 class="meal_title">Fondant au chocolat</h4>
+                    <p class="meal_subtitle">
+                      Revisité
+                      <span class="meal_price"><strong>22€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+
+                <div class="content_meal_desserts_three">
+                  <div class="meal">
+                    <h4 class="meal_title">Millefeuille croustillant</h4>
+                    <p class="meal_subtitle">
+                      Myrtilles et pâte d’amande
+                      <span class="meal_price"><strong>23€</strong></span>
+                    </p>
+                  </div>
+                  <!-- Animation-->
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          <button class="command_button">
+            <span class="commander">Commander</span>
+          </button>
+        </div>
+        <!--fin container_menu"> -->
+      </div>
+      <!--cont.global.menu -->
+      <footer>
+        <div class="footerglobal">
+          <h2 class="footer_logo">Ohmyfood</h2>
+          <div class="footermenu">
+            <p class="suggest">
+              <i class="fas fa-utensils"></i>Proposer un restaurant
+            </p>
+            <p class="partner">
+              <i class="fas fa-hands-helping"></i>Devenir partenaire
+            </p>
+            <p class="legalnotice">Mentions légales</p>
+            <div class="contact">
+              <a href="mailto:votreadresse@mail.fr">Contact</a>
+            </div>
+          </div>
+        </div>
+      
+      </footer>
+    </div>
+    <!-- fin div containerglobale-->
+  </body>
+</html>

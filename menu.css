@@ -22,6 +22,9 @@ body {
   width: 100%;
 }
 
+*{text-overflow: ellipsis}
+
+
 /* Font Roboto pour texte */
 /* Font Shrikhand pour Logo et Titre */
 
@@ -40,6 +43,7 @@ body {
   font-family: "shrikhand";
   src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
 }
+
 
 /* header */
 
@@ -139,7 +143,8 @@ bottom: 10px;}
     padding: 10px 0 0 8px;
 }
 .meal_subtitle{margin: 8px 0 0 8px;
-color: #7B7B7B;}
+color: #7B7B7B;
+}
 
 /* button */
 
