@@ -142,4 +142,55 @@ bottom: 10px;}
 color: #7B7B7B;}
 
 
-  
+  /* Footer */
+
+.footermenu
+{font-family: "Roboto";}
+
+
+.footerglobal {
+  background-color: #353535;
+  padding: 20px 0px 20px 20px;
+}
+
+.footer_logo {
+  font-size: 20px;
+  font-family: "shrikhand";
+  color: white;
+}
+
+.suggest {
+  color: white;
+}
+
+.partner {
+  color: white;
+}
+
+.legalnotice {
+  color: white;
+}
+.contact a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* icone */
+
+.fa-utensils:before {
+  content: "\f2e7";
+  padding-right: 10px;
+}
+
+.fa-hands-helping:before {
+  content: "\f4c4";
+  padding-right: 10px;
+}
+
+.fa-store-alt:before {
+  content: "\f54f";
+  color: #9356dc;
+}
