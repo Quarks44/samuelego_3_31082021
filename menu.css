@@ -22,9 +22,6 @@ body {
   width: 100%;
 }
 
-*{text-overflow: ellipsis}
-
-
 /* Font Roboto pour texte */
 /* Font Shrikhand pour Logo et Titre */
 
@@ -43,7 +40,6 @@ body {
   font-family: "shrikhand";
   src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
 }
-
 
 /* header */
 
@@ -88,62 +84,63 @@ header {
   top: -33px;
 }
 
-.title_menu
-{font-family: "shrikhand";
-    font-size: 20px;
-    position: relative;
-    padding: 20px 20px ;
-   align-items: center;
+.title_menu {
+  font-family: "shrikhand";
+  font-size: 20px;
+  position: relative;
+  padding: 20px 20px;
+  align-items: center;
 }
 
-.icone_heart
-{border: none;
-position: absolute;
-right: 40px;
-bottom: 23px;
-font-size: 20px;
+.icone_heart {
+  border: none;
+  position: absolute;
+  right: 40px;
+  bottom: 23px;
+  font-size: 20px;
 }
 
-.title-meal
-{
-    font-family: "Roboto";
-    color: #7B7B7B;
-    padding-left: 20px;
-    padding-top: 10px;
-    font-weight: 300;
-
+.title-meal {
+  font-family: "Roboto";
+  color: #7b7b7b;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-weight: 300;
 }
 
 /* barre verte #99E2D0*/
 
-.meal{
-    display: flex;
-    flex-direction: column;
-    border: solid 2px #F2F2F2;
-    background-color: white;
-    border-radius: 10px;
-    position: relative;
-    width: 90%;
-    height: 66px;
-    margin: 14px auto 10px 20px;
-    font-family: "Roboto";
+.meal {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #f2f2f2;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: 66px;
+  margin: 14px auto 10px 20px;
+  font-family: "Roboto";
+  box-shadow: black;
 }
 
-.meal_price
-{display: flex;
-justify-content: center;
-align-items: flex-end;
-font-size: 1em;
-position: absolute;
-right: 16px;
-bottom: 10px;}
-
-.meal_title 
-{
-    padding: 10px 0 0 8px;
+.meal_price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1em;
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
 }
-.meal_subtitle{margin: 8px 0 0 8px;
-color: #7B7B7B;
+
+.meal_title {
+  padding: 10px 0 0 8px;
+}
+.meal_subtitle {display: flex;
+  margin: 8px 0 0 8px;
+  color: #7b7b7b;
+  text-overflow: ellipsis;
 }
 
 /* button */
@@ -160,11 +157,11 @@ color: #7B7B7B;
   color: white;
 }
 
-  /* Footer */
+/* Footer */
 
-.footermenu
-{font-family: "Roboto";}
-
+.footermenu {
+  font-family: "Roboto";
+}
 
 .footerglobal {
   background-color: #353535;
@@ -175,7 +172,7 @@ color: #7B7B7B;
   font-size: 20px;
   font-family: "shrikhand";
   color: white;
-  font-weight : normal;
+  font-weight: normal;
 }
 
 .suggest {
@@ -214,3 +211,13 @@ a:link {
   color: #9356dc;
 }
 
+.barrretexte {
+  width: 40px;
+  margin-left: 20px;
+  border: solid 2px #99e2d0;
+}
+
+button:hover {
+  opacity: 0.7;
+  box-shadow: 10px 10px 10px #0000002e;
+}
