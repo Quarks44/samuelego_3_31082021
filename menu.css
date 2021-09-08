@@ -124,22 +124,24 @@ header {
   box-shadow: black;
 }
 
-.meal_price {
+.overflow {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.meal_price {
   font-size: 1em;
-  position: absolute;
-  right: 16px;
-  bottom: 10px;
 }
 
 .meal_title {
   padding: 10px 0 0 8px;
 }
-.meal_subtitle {display: flex;
+
+.meal_subtitle {
   margin: 8px 0 0 8px;
   color: #7b7b7b;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
