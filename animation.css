@@ -1,11 +1,5 @@
 /* Animation */
 
-/*
-Page d’accueil 
-loading spinner:
-1 à 3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et utiliser les animations CSS (pas de librairie).
-Le design de ce loader n’est pas défini. 
-*/
 
 .spinner {
   width: 100%;
@@ -19,9 +13,9 @@ Le design de ce loader n’est pas défini.
 }
 
 .animspin {
-  border: 10px solid #99E2D0;
-  border-top: 10px solid #9356DC;
-  border-bottom: 10px solid #FF79DA;
+  border: 10px solid #99e2d0;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -64,24 +58,65 @@ Au clic, il devra se remplir progressivement
 Au survol sur desktop au lieu du clic. 
 */
 
+/* essai */
+
+.fa-heart:hover::before {
+  color: #9356dc;
+  font-weight: bold; /* obligatoire pour degradé */
+  cursor: pointer;
+  transition: color 2s ease-out;
+  cursor: pointer;
+}
+
+/* background: linear, left top, left bottom, from(#9356DC), to(#FF79DA); /* bas en haut avec degradé  */
+
 /*
 Pages de menu 
 les plats devront apparaître progressivement avec un léger 
 décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”.
 */
-.content_meal
-{
+.content_meal {
   animation: fadein 3s;
 }
 
- @keyframes fadein {
+@keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
 /*
 Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. L’effet peut apparaître au survol sur desktop au lieu du clic.
 */
+ /* essai 2 */
+
+.meal_price:hover {
+  transform: translateX(-50%);
+  color: #99e2d0;
+  transition-duration: 0.5s;
+}
+
+.iconecheck:hover{
+  background-color: #99e2d0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+height: auto;
+  width: 20%;
+transition: 1s; /*permettent de contrôler la vitesse d'animation */
+}
+
+.iconecheck{display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.fa-check-circle{
+
+  font-size: 1rem;
+  transition: 700ms;
+  position: absolute;
+  bottom: 25px;
+}
+
