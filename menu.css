@@ -22,12 +22,6 @@ body {
   width: 100%;
 }
 
-/* Font Roboto pour texte */
-/* Font Shrikhand pour Logo et Titre */
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
 /* Police */
 
@@ -85,19 +79,13 @@ header {
 }
 
 .title_menu {
+  display: flex;
+  justify-content: space-between;
   font-family: "shrikhand";
   font-size: 20px;
   position: relative;
   padding: 20px 20px;
   align-items: center;
-}
-
-.icone_heart {
-  border: none;
-  position: absolute;
-  right: 40px;
-  bottom: 23px;
-  font-size: 20px;
 }
 
 .title-meal {
@@ -121,7 +109,6 @@ header {
   height: 66px;
   margin: 14px auto 10px 20px;
   font-family: "Roboto";
-  box-shadow: black;
 }
 
 .overflow {
