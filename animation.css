@@ -1,6 +1,6 @@
 /* Animation */
 
-
+/*Animation spinner*/
 .spinner {
   width: 100%;
   height: 100%;
@@ -28,7 +28,6 @@
   bottom: 0;
 }
 
-/*Animation spinner*/
 @keyframes spinner {
   0% {
     opacity: 1;
@@ -58,14 +57,34 @@ Au clic, il devra se remplir progressivement
 Au survol sur desktop au lieu du clic. 
 */
 
-/* essai */
+/* essai 3 */
 
 .fa-heart:hover::before {
   color: #9356dc;
   font-weight: bold; /* obligatoire pour degradé */
   cursor: pointer;
-  transition: color 2s ease-out;
+  transition: color 1s;
   cursor: pointer;
+  animation: heartfull 1s;
+  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes heartfull {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* background: linear, left top, left bottom, from(#9356DC), to(#FF79DA); /* bas en haut avec degradé  */
@@ -76,47 +95,40 @@ les plats devront apparaître progressivement avec un léger
 décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”.
 */
 .content_meal {
-  animation: fadein 3s;
+  animation-name: fondumenu;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
 }
 
-@keyframes fadein {
-  from {
+@keyframes fondumenu {
+  0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
 /*
 Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. L’effet peut apparaître au survol sur desktop au lieu du clic.
 */
- /* essai 2 */
+/* essai 2 */
 
-.meal_price:hover {
-  transform: translateX(-50%);
-  color: #99e2d0;
-  transition-duration: 0.5s;
+.iconecheck {
+  opacity: 1;
 }
 
-.iconecheck:hover{
+.iconecheck:hover {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #99e2d0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-height: auto;
-  width: 20%;
-transition: 1s; /*permettent de contrôler la vitesse d'animation */
+  margin: -29px 0px -11px 0px;
+  transition-duration: 0.5s;
+  width: 104px;
+  border-radius: 10px;
 }
-
-.iconecheck{display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.fa-check-circle{
-
-  font-size: 1rem;
-  transition: 700ms;
-  position: absolute;
-  bottom: 25px;
-}
-
