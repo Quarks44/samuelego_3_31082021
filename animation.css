@@ -64,7 +64,6 @@ Au survol sur desktop au lieu du clic.
   font-weight: bold; /* obligatoire pour degradé */
   cursor: pointer;
   transition: color 1s;
-  cursor: pointer;
   animation: heartfull 1s;
   background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
@@ -85,6 +84,7 @@ Au survol sur desktop au lieu du clic.
   100% {
     opacity: 1;
   }
+  
 }
 
 /* background: linear, left top, left bottom, from(#9356DC), to(#FF79DA); /* bas en haut avec degradé  */
@@ -96,9 +96,9 @@ décalage dans le temps. Ils pourront soit apparaître un par un, soit par group
 */
 .content_meal {
   animation-name: fondumenu;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
+  animation-iteration-count: 1; /* indique le nombre de cycles utilisés pour répéter une animation avant que celle-ci s'arrête. */
+  animation-timing-function: linear; /*l'animation s'effectue à vitesse constante. */
+  animation-duration: 3s;
 }
 
 @keyframes fondumenu {
@@ -117,8 +117,12 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 */
 /* essai 2 */
 
+.confirmation {
+  display: flex;
+}
+
 .iconecheck {
-  opacity: 1;
+  opacity: 0;
 }
 
 .iconecheck:hover {
@@ -131,4 +135,9 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
   transition-duration: 0.5s;
   width: 104px;
   border-radius: 10px;
+  color: white;
+}
+
+.fa-check:hover {
+  transform: rotate(360deg);
 }
