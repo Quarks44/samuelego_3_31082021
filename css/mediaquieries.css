@@ -66,3 +66,16 @@
     margin-right: 55px;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  .menu_card {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .title_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
