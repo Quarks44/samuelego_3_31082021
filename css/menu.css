@@ -118,6 +118,9 @@ header {
 
 .meal_price {
   font-size: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .meal_title {
