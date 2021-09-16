@@ -22,7 +22,6 @@ body {
   width: 100%;
 }
 
-
 /* Police */
 
 @font-face {
@@ -109,6 +108,7 @@ header {
   height: 66px;
   margin: 14px auto 10px 20px;
   font-family: "Roboto";
+  cursor: pointer;
 }
 
 .overflow {

@@ -59,7 +59,7 @@ Au survol sur desktop au lieu du clic.
 
 /* essai 3 */
 
-.fa-heart:hover::before {
+.fa-heart:active::before {
   color: #9356dc;
   font-weight: bold; /* obligatoire pour degradé */
   cursor: pointer;
@@ -180,25 +180,37 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 */
 /* essai 5 */
 
-.animcheck:hover {
-  transform: rotate(360deg);
-  transition-duration: 1s;
-}
 .confirmation {
-  display: flex;
-  width: 0%;
-  color: white;
-}
-
-.overflow:hover > .iconecheck .iconecheck:hover {
-  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #99e2d0;
-  margin: -29px 0px -11px 0px;
-  transition-duration: 0.5s;
-  width: 104px;
-  border-radius: 10px;
+  width: 4em;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: -4em;
+  background: #99e2d0;
+  opacity: 0;
   color: white;
+}
+
+.confirmation:active {
+  animation: slide 1s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  border-radius: 0 10% 10% 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4em);
+  }
+}
+
+.animcheck:active {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
