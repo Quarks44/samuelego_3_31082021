@@ -109,6 +109,7 @@ header {
   margin: 14px auto 10px 20px;
   font-family: "Roboto";
   cursor: pointer;
+  margin-right: -10px;
 }
 
 .overflow {
@@ -121,6 +122,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: absolute;
+  right: 3%;
 }
 
 .meal_title {
@@ -212,4 +215,8 @@ a:link {
 button:hover {
   opacity: 0.7;
   box-shadow: 10px 10px 10px #0000002e;
+}
+
+.fa:hover .fas:hover .far:hover {
+  cursor: pointer;
 }

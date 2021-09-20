@@ -194,7 +194,7 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
   color: white;
 }
 
-.confirmation:active {
+.confirmation:hover {
   animation: slide 1s;
   animation-fill-mode: forwards;
   opacity: 1;
@@ -213,4 +213,8 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 .animcheck:active {
   transform: rotate(360deg);
   transition-duration: 1s;
+}
+
+.content_meal_entree_one:hover .overflow {
+  width: calc(100% - 40px);
 }
