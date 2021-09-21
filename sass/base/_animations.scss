@@ -1,33 +1,4 @@
-/* Animation */
-
 /*Animation spinner*/
-.spinner {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-color: white;
-  left: 0;
-  top: 0;
-  z-index: 2; /*  z-order détermine l'ordre des différentes couches que formeront les éléments */
-  animation: spinner 8s forwards;
-}
-
-.animspin {
-  border: 10px solid #99e2d0;
-  border-top: 10px solid #9356dc;
-  border-bottom: 10px solid #ff79da;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  animation: timespin 8s linear forwards; /*'animation s'effectue à vitesse constante. */
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 @keyframes spinner {
   0% {
     opacity: 1;
@@ -48,12 +19,7 @@
   }
 }
 
-/* fin spinner */
-
-/* Coeur qui se rempli 
-
-bouton "J’aime" en forme de cœur */
-
+/* Coeur qui se rempli */
 .emptyHeart {
   font-size: 1.7rem;
   cursor: pointer;
@@ -93,9 +59,7 @@ bouton "J’aime" en forme de cœur */
 /*
 Pages de menu 
 les plats devront apparaître progressivement avec un léger 
-décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”.
-*/
-
+décalage dans le temps. */
 .content_meal_entree_one {
   animation-name: fondu;
   animation-duration: 1s;
@@ -178,8 +142,8 @@ décalage dans le temps. Ils pourront soit apparaître un par un, soit par group
 }
 
 /*
-Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche. L’effet peut apparaître au survol sur desktop au lieu du clic.
-*/
+Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. 
+Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche.*/
 
 .confirmation {
   display: flex;

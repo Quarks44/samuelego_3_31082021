@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/*Animation spinner*/
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@-webkit-keyframes timespin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes timespin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Coeur qui se rempli */
+.emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+
+.emptyHeart:hover {
+  color: transparent;
+}
+
+.fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  /* background: linear, left top, left bottom, from(#9356DC), to(#FF79DA); /* bas en haut avec degradé  */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scaleY(0);
+  transition: transform 150ms 50ms ease-in-out;
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+.emptyHeart:hover > .fullHeart {
+  transform: scaleY(1);
+}
+
+.emptyHeart {
+  margin-left: auto;
+}
+
+/*
+Pages de menu 
+les plats devront apparaître progressivement avec un léger 
+décalage dans le temps. */
+.content_meal_entree_one {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_entree_two {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_entree_three {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_entree_four {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_plats_one {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_plats_two {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_plats_three {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_desserts_one {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_desserts_two {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.content_meal_desserts_three {
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fondu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*
+Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus. 
+Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de la droite vers la gauche.*/
+.confirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: -4em;
+  background: #99e2d0;
+  color: white;
+  overflow: hidden;
+}
+
+.meal:hover > .confirmation {
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  border-radius: 0 10% 10% 0;
+  width: 20%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4em);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4em);
+  }
+}
+.animcheck:active {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .searchbar {
+    font-size: 24px;
+  }
+
+  .pres1 {
+    font-size: 33px;
+  }
+
+  .pres2 {
+    font-size: 25px;
+  }
+
+  .button {
+    height: 60px;
+    font-size: 23px;
+    width: auto;
+  }
+
+  .sectiontitle {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .step {
+    display: grid;
+    align-items: center;
+    margin: 4% auto;
+    font-size: 20px;
+    height: 74px;
+    font-weight: normal;
+  }
+
+  .steptext {
+    font-weight: normal;
+  }
+
+  .stepnumber {
+    height: auto;
+  }
+
+  .localisations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu_content {
+    font-size: 19px;
+  }
+
+  .footer_logo {
+    font-size: 38px;
+  }
+
+  .footerglobal {
+    display: grid;
+    justify-items: center;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .fa-heart {
+    margin-right: 55px;
+  }
+
+  .meal:active > .confirmation {
+    -webkit-animation: slide 1s;
+            animation: slide 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    border-radius: 0 10% 10% 0;
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menu_card {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  .title_menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .emptyHeart {
+    margin: auto;
+  }
+}
+/* Police */
+@font-face {
+  font-family: "Roboto";
+  src: url("Fonts/Roboto/Roboto-Regular-webfont.ttf");
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
+}
+h2,
+h3,
+p,
+a {
+  font-family: "Roboto";
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  font-size: 33px;
+}
+
+.button {
+  background-image: linear-gradient(135deg, #ff79da, #9356dc);
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 230px;
+  box-shadow: 5px 6px 7px #0000002e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.button:hover {
+  opacity: 0.7;
+  box-shadow: 10px 10px 10px #0000002e;
+}
+
+.explorer {
+  color: white;
+  text-align: center;
+}
+
+.command_button {
+  background-image: linear-gradient(135deg, #ff79da, #9356dc);
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 157px;
+  box-shadow: 5px 6px 7px #0000002e;
+  display: block;
+  margin: 0 auto 37px auto;
+  color: white;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  /*  z-order détermine l'ordre des différentes couches que formeront les éléments */
+  -webkit-animation: spinner 8s forwards;
+          animation: spinner 8s forwards;
+}
+
+.animspin {
+  border: 10px solid #99e2d0;
+  border-top: 10px solid #9356dc;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: timespin 8s linear forwards;
+          animation: timespin 8s linear forwards;
+  /*'animation s'effectue à vitesse constante. */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footerglobal {
+  background-color: #353535;
+  padding: 20px 0px 20px 20px;
+}
+
+.footer_logo {
+  font-size: 20px;
+  font-family: "shrikhand";
+  color: white;
+  font-weight: normal;
+}
+
+.suggest {
+  color: white;
+}
+
+.partner {
+  color: white;
+}
+
+.legalnotice {
+  color: white;
+}
+
+.contact a {
+  color: white;
+}
+
+.fa-utensils:before {
+  content: "";
+  padding-right: 10px;
+}
+
+.fa-hands-helping:before {
+  content: "";
+  padding-right: 10px;
+}
+
+.fa-utensils:before {
+  content: "";
+  padding-right: 10px;
+}
+
+.fa-hands-helping:before {
+  content: "";
+  padding-right: 10px;
+}
+
+header {
+  margin: 14px 0 8px 0;
+}
+
+.logo {
+  text-align: center;
+  font-family: "shrikhand";
+  font-size: 18px;
+}
+
+.returnhomepage {
+  position: absolute;
+  left: 24px;
+  top: 30px;
+}/*# sourceMappingURL=main.css.map */

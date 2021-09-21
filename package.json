@@ -1,0 +1,12 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site de Réservation de restaurant sur Paris",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./sass/main.scss:../css/style.css"
+  },
+  "author": "Samuel Lego",
+  "license": "ISC"
+}
