@@ -65,6 +65,13 @@
   .fa-heart {
     margin-right: 55px;
   }
+
+  .meal:active > .confirmation {
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+    border-radius: 0 10% 10% 0;
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -74,8 +81,11 @@
   }
 
   .title_menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .emptyHeart {
+    margin: auto;
   }
 }
