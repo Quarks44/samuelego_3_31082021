@@ -1,0 +1,20 @@
+/* Barre de recherche */
+.searchbar {
+    display: flex;
+    justify-content: center;
+    background-color: #eaeaea;
+    padding: 10px 0 10px 0;
+  }
+  
+  .searchbar__iconemap {
+    padding: 0 10px 0 0;
+    color: #353535;
+  }
+  
+  .searchbar__content > a {
+    color: #353535;
+  }
+  
+  a:link {
+    text-decoration: none;
+  }

@@ -1,0 +1,26 @@
+/* Footer */
+.footerglobal {
+    background-color: #353535;
+    padding: 20px 0px 20px 20px;
+  }
+  
+  .footer_logo {
+    font-size: 20px;
+    font-family: "shrikhand";
+    color: white;
+    font-weight: normal;
+  }
+  
+  .suggest, .partner, .legalnotice, .contact a {
+    color: white;
+  }
+
+  .fa-utensils:before {
+    content: "";
+    padding-right: 10px;
+  }
+  
+  .fa-hands-helping:before {
+    content: "";
+    padding-right: 10px;
+  }

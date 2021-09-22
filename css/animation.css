@@ -9,7 +9,8 @@
   left: 0;
   top: 0;
   z-index: 2; /*  z-order détermine l'ordre des différentes couches que formeront les éléments */
-  animation: spinner 8s forwards;
+  -webkit-animation: spinner 8s forwards;
+          animation: spinner 8s forwards;
 }
 
 .animspin {
@@ -19,13 +20,24 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: timespin 8s linear forwards; /*'animation s'effectue à vitesse constante. */
+  -webkit-animation: timespin 8s linear forwards;
+          animation: timespin 8s linear forwards; /*'animation s'effectue à vitesse constante. */
   margin: auto;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
 }
 
 @keyframes spinner {
@@ -35,6 +47,16 @@
   100% {
     opacity: 0;
     z-index: -10;
+  }
+}
+@-webkit-keyframes timespin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 @keyframes timespin {
@@ -97,73 +119,124 @@ décalage dans le temps. Ils pourront soit apparaître un par un, soit par group
 */
 
 .content_meal_entree_one {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_entree_two {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 1.2s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_entree_three {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 1.4s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_entree_four {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 1.6s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_plats_one {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 1.8s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_plats_two {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_plats_three {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 2.2s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_desserts_one {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 2.4s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_desserts_two {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 2.6s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .content_meal_desserts_three {
-  animation-name: fondu;
-  animation-duration: 1s;
-  animation-delay: 2.8s;
-  animation-fill-mode: both;
+  -webkit-animation-name: fondu;
+          animation-name: fondu;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fondu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes fondu {
@@ -196,10 +269,21 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
 }
 
 .meal:hover > .confirmation {
-  animation: slide 1s;
-  animation-fill-mode: forwards;
+  -webkit-animation: slide 1s;
+          animation: slide 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   border-radius: 0 10% 10% 0;
   width: 20%;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-4em);
+  }
 }
 
 @keyframes slide {

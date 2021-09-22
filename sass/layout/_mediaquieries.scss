@@ -10,9 +10,11 @@
   .pres1 {
     font-size: 33px;
   }
+
   .pres2 {
     font-size: 25px;
   }
+
   .button {
     height: 60px;
     font-size: 23px;
@@ -60,7 +62,6 @@
     font-size: 16px;
   }
 }
-
 @media screen and (min-width: 400px) {
   .fa-heart {
     margin-right: 55px;
@@ -68,14 +69,13 @@
 
   .meal:active > .confirmation {
     -webkit-animation: slide 1s;
-            animation: slide 1s;
+    animation: slide 1s;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     border-radius: 0 10% 10% 0;
     width: 20%;
   }
 }
-
 @media screen and (min-width: 1000px) {
   .menu_card {
     margin: 0 auto;

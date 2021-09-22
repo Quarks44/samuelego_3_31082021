@@ -1,0 +1,39 @@
+@-webkit-keyframes spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  
+  @keyframes spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  @-webkit-keyframes timespin {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes timespin {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  }

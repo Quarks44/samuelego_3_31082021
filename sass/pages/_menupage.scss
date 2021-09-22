@@ -1,0 +1,102 @@
+.picture {
+  width: 100%;
+}
+
+.imgrest {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cont.global.menu {
+  background-color: #f6f6f6;
+}
+
+.config_menu {
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  top: -33px;
+}
+
+.title_menu {
+  display: flex;
+  justify-content: space-between;
+  font-family: "shrikhand";
+  font-size: 20px;
+  position: relative;
+  padding: 20px 20px;
+  align-items: center;
+}
+
+.title-meal {
+  font-family: "Roboto";
+  color: #7b7b7b;
+  padding-left: 20px;
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.meal {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #f2f2f2;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  width: 90%;
+  height: 66px;
+  margin: 14px auto 10px 20px;
+  font-family: "Roboto";
+  cursor: pointer;
+  margin-right: -10px;
+}
+
+.overflow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meal_price {
+  font-size: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+}
+
+.meal_title {
+  padding: 10px 0 0 8px;
+}
+
+.meal_subtitle {
+  margin: 8px 0 0 8px;
+  color: #7b7b7b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+
+.fa-store-alt:before {
+  content: "";
+  color: #9356dc;
+}
+
+.barrretexte {
+  width: 40px;
+  margin-left: 20px;
+  border: solid 2px #99e2d0;
+}
+
+button:hover {
+  opacity: 0.7;
+  box-shadow: 10px 10px 10px #0000002e;
+}
+
+.fa:hover .fas:hover .far:hover {
+  cursor: pointer;
+}
