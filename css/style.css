@@ -13,10 +13,8 @@ i,
 img {
   margin: 0;
   padding: 0;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 body {
@@ -209,8 +207,7 @@ a:link {
 .imagemenu {
   width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
