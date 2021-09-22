@@ -8,8 +8,10 @@
   background-color: white;
   left: 0;
   top: 0;
-  z-index: 2; /*  z-order détermine l'ordre des différentes couches que formeront les éléments */
-  animation: spinner 8s forwards;
+  z-index: 2;
+  animation: spinner 0.1s;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
 }
 
 .animspin {
@@ -19,7 +21,8 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: timespin 8s linear forwards; /*'animation s'effectue à vitesse constante. */
+  animation: timespin 1s ease-in-out;
+  animation-iteration-count: 3;
   margin: auto;
   position: absolute;
   top: 0;
@@ -29,22 +32,17 @@
 }
 
 @keyframes spinner {
-  0% {
-    opacity: 1;
-  }
   100% {
     opacity: 0;
-    z-index: -10;
+    z-index: -2;
   }
 }
 @keyframes timespin {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 
@@ -76,6 +74,7 @@ bouton "J’aime" en forme de cœur */
     #9356dc
   ); /* background: linear, left top, left bottom, from(#9356DC), to(#FF79DA); /* bas en haut avec degradé  */
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scaleY(0);
 
