@@ -188,14 +188,14 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
   height: 100%;
   position: absolute;
   top: 0px;
-  right: -4em;
+  right: -160px;
   background: #99e2d0;
   color: white;
   overflow: hidden;
 }
 
 .meal:hover > .confirmation {
-  animation: slide 1s;
+  animation: slide 0.5s;
   animation-fill-mode: forwards;
   border-radius: 0 10% 10% 0;
   width: 20%;
@@ -210,7 +210,11 @@ Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant des
   }
 }
 
-.animcheck:active {
+.confirmation:hover > .animcheck {
   transform: rotate(360deg);
   transition-duration: 1s;
+}
+
+.meal:hover {
+  width: 80%;
 }
