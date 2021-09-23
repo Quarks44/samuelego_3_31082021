@@ -1,26 +1,29 @@
 /* Footer */
 .footerglobal {
-    background-color: #353535;
-    padding: 20px 0px 20px 20px;
-  }
-  
-  .footer_logo {
+  background-color: $quaternaire;
+  padding: 20px 0px 20px 20px;
+
+  &__footer_logo {
     font-size: 20px;
     font-family: "shrikhand";
     color: white;
     font-weight: normal;
   }
-  
-  .suggest, .partner, .legalnotice, .contact a {
+
+  &__suggest,
+  &__partner,
+  &__legalnotice,
+  &__contact a {
     color: white;
   }
 
-  .fa-utensils:before {
+  &__fa-utensils:before {
     content: "";
     padding-right: 10px;
   }
-  
-  .fa-hands-helping:before {
+
+  &__fa-hands-helping:before {
     content: "";
     padding-right: 10px;
   }
+}
