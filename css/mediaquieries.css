@@ -1,4 +1,4 @@
-@media (min-width: 200px) and (max-width: 680px) {
+@media screen and (min-device-width: 300px) and (max-device-width: 779px) {
   .fa-heart {
     margin-right: 55px;
   }
@@ -11,7 +11,7 @@
   }
 }
 
-@media (min-width: 681px) {
+@media screen and (min-device-width: 780px) and (max-device-width: 2160px) {
   .menu_card {
     margin: 0 auto;
     width: 600px;
@@ -85,5 +85,39 @@
     display: grid;
     justify-items: center;
     font-size: 16px;
+  }
+
+  .confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: -203px;
+    background: #99e2d0;
+    color: white;
+    overflow: hidden;
+  }
+
+  .meal:hover > .confirmation {
+    animation: slide 0.5s;
+    animation-fill-mode: forwards;
+    border-radius: 0 10% 10% 0;
+    width: 18%;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-203px);
+    }
+  }
+
+  .meal:hover {
+    width: 85%;
   }
 }
