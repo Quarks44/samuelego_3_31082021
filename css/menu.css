@@ -22,14 +22,14 @@ body {
   width: 100%;
 }
 
-.logo{
+.logo {
   cursor: pointer;
 }
 /* Police */
 
 @font-face {
   font-family: "Roboto";
-  src: url("Fonts/Roboto/Roboto-Regular-webfont.ttf");
+  src: url("Fonts/roboto/Roboto-Regular-webfont.ttf");
 }
 
 @font-face {
@@ -223,4 +223,98 @@ button:hover {
 
 .fa:hover .fas:hover .far:hover {
   cursor: pointer;
+}
+
+/* bouton checklist qui tourne */
+.animcheck {
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transform: rotate(360deg);
+}
+
+/*
+Pages de menu 
+les plats devront apparaître progressivement avec un léger 
+décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe “Entrée”, “Plat” et “Dessert”.
+*/
+
+.content_meal_entree_one {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.content_meal_entree_two {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+}
+
+.content_meal_entree_three {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 1.4s;
+  animation-fill-mode: both;
+}
+
+.content_meal_entree_four {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: both;
+}
+
+.content_meal_plats_one {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-fill-mode: both;
+}
+
+.content_meal_plats_two {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.content_meal_plats_three {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+  animation-fill-mode: both;
+}
+
+.content_meal_desserts_one {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+  animation-fill-mode: both;
+}
+
+.content_meal_desserts_two {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2.6s;
+  animation-fill-mode: both;
+}
+
+.content_meal_desserts_three {
+  animation-name: fondu;
+  animation-duration: 1s;
+  animation-delay: 2.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes fondu {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
