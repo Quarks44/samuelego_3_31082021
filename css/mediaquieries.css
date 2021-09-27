@@ -1,4 +1,4 @@
-@media screen and (min-device-width: 300px) and (max-device-width: 779px) {
+@media screen and (max-width: 779px) {
   .fa-heart {
     margin-right: 55px;
   }
@@ -9,9 +9,42 @@
     border-radius: 0 10% 10% 0;
     width: 20%;
   }
+  .confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: -173px;
+    background: #99e2d0;
+    color: white;
+    overflow: hidden;
+  }
+
+  .meal:active > .confirmation {
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+    border-radius: 0 10% 10% 0;
+    width: 21%;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-119px);
+    }
+  }
+
+  .meal:active {
+    width: 76%;
+  }
 }
 
-@media screen and (min-device-width: 780px) and (max-device-width: 2160px) {
+@media screen and (min-width: 780px) {
   .menu_card {
     margin: 0 auto;
     width: 600px;
@@ -95,29 +128,20 @@
     height: 100%;
     position: absolute;
     top: 0px;
-    right: -203px;
+    right: -85px;
     background: #99e2d0;
     color: white;
     overflow: hidden;
   }
 
   .meal:hover > .confirmation {
-    animation: slide 0.5s;
+    animation: slide 1s;
     animation-fill-mode: forwards;
     border-radius: 0 10% 10% 0;
-    width: 18%;
-  }
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(-203px);
-    }
+    width: 19%;
   }
 
   .meal:hover {
-    width: 85%;
+    width: 76%;
   }
 }
