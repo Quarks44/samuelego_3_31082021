@@ -26,12 +26,12 @@ body {
 
 @font-face {
   font-family: "Roboto";
-  src: url("Fonts/Roboto/Roboto-Regular-webfont.ttf");
+  src: url("fonts/roboto/Roboto-Regular-webfont.ttf");
 }
 
 @font-face {
   font-family: "shrikhand";
-  src: url("Fonts/shrikhand/Shrikhand-Regular.ttf");
+  src: url("fonts/shrikhand/Shrikhand-Regular.ttf");
 }
 
 h2,
