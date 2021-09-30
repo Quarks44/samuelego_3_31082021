@@ -3,8 +3,9 @@
     margin-right: 55px;
   }
 
-  .meal:active > .confirmation {
-    animation: slide 1s;
+  .meal:hover > .confirmation {
+    animation: slide;
+    transition-duration: 0.5s;
     animation-fill-mode: forwards;
     border-radius: 0 10% 10% 0;
     width: 20%;
@@ -23,23 +24,19 @@
     overflow: hidden;
   }
 
-  .meal:active > .confirmation {
-    animation: slide 1s;
-    animation-fill-mode: forwards;
-    border-radius: 0 10% 10% 0;
-    width: 21%;
-  }
-
   @keyframes slide {
     0% {
       transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(-119px);
     }
     100% {
       transform: translateX(-119px);
     }
   }
 
-  .meal:active {
+  .meal:hover {
     width: 76%;
   }
 }
@@ -128,20 +125,30 @@
     height: 100%;
     position: absolute;
     top: 0px;
-    right: -85px;
+    right: -188px;
     background: #99e2d0;
     color: white;
     overflow: hidden;
   }
 
   .meal:hover > .confirmation {
-    animation: slide 1s;
+    animation: slide;
+    transition-duration: 0.5s;
     animation-fill-mode: forwards;
     border-radius: 0 10% 10% 0;
-    width: 19%;
+    width: 14%;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0px);
+    }
+
+    100% {
+      transform: translateX(-125px);
+    }
   }
 
   .meal:hover {
-    width: 76%;
+    width: 80%;
   }
 }
