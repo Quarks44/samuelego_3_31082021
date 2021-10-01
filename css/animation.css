@@ -48,6 +48,15 @@
 
 /* fin spinner */
 
+/*Checkbox menu*/
+.meal:hover > .confirmation {
+  width: 20%;
+}
+.meal:hover > .overflow {
+  width: 75%;
+}
+/* Fin Checkbox menu*/
+
 /* Coeur qui se rempli 
 
 bouton "J’aime" en forme de cœur */

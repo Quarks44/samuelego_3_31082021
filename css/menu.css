@@ -118,6 +118,9 @@ header {
 .overflow {
   display: flex;
   justify-content: space-between;
+  width: 95%;
+  margin: 0px 10px 0 0;
+  transition: width 1s;
 }
 
 .meal_price {
@@ -125,8 +128,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  right: 3%;
+  /*position: absolute;
+  right: 3%;*/
 }
 
 .meal_title {
@@ -140,6 +143,23 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 80%;
+}
+
+.confirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /*background: #99e2d0;*/
+  background: #99e2d0;
+  color: white;
+  overflow: hidden;
+  border-radius: 0 10% 10% 0;
+  transition: width, 1s;
 }
 
 /* button */
